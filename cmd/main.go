@@ -10,8 +10,6 @@ import (
 
 func main() {
 
-	
-
 
 	config, err := configs.LoadConfig("../")
 	if err != nil {
