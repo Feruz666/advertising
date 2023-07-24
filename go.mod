@@ -2,6 +2,8 @@ module github.com/Feruz666/advertising
 
 go 1.19
 
+require github.com/lib/pq v1.10.9
+
 require (
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect

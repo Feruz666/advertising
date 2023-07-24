@@ -1,27 +1,23 @@
 package main
 
 import (
-	"log"
-	"net/http"
+	"context"
 
 	"github.com/Feruz666/advertising/configs"
-	"github.com/labstack/echo/v4"
 )
 
 func main() {
+	
+}
 
+func run() error {
+	ctx := context.Background()
 
-	config, err := configs.LoadConfig("../")
-	if err != nil {
-		log.Fatal("cannon load config:", err)
-	}
+	// store
+	cfg := configs.Get()
 
-	e := echo.New()
-	e.GET("/healthchecker", func(ctx echo.Context) error {
-		message := "Welcome to Golang with Postgres"
-		return ctx.String(http.StatusOK, message)
-	})
+	// Init  
+	
 
-	e.Logger.Fatal(e.Start(config.ServerAddress))
-
+	return nil
 }
