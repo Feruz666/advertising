@@ -16,6 +16,7 @@ func NewPostsRepository(db *sqlx.DB) *PostsPostgres {
 }
 
 func (p *PostsPostgres) Save(ctx context.Context, post *model.PostModel) (*model.PostModel, error) {
+
 	return nil, nil
 }
 
